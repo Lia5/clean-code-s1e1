@@ -1,18 +1,20 @@
-/* Basic Style */
 .page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .hero {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .hero__img {
   width: 100%;
 }
+
 .hero .hero__link {
   font-family: fantasy, cursive;
 }
@@ -22,26 +24,32 @@
     text-align: center;
   }
 }
+
 .main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   display: flex;
 }
+
 ul {
   margin: 0;
   padding: 0px;
 }
+
 li,
 h3 {
   list-style: none;
 }
+
 input,
 button{
   outline: none;
 }
+
 .task__btn {
   background: none;
   border: 0px;
@@ -51,10 +59,11 @@ button{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .task__btn:hover {
   color: #3a3a3a;
 }
-/* Heading */
+
 .title {
   color: #333;
   font-weight: 700;
@@ -64,6 +73,7 @@ button{
   margin: 0;
   text-transform: uppercase;
 }
+
 .task__input {
   flex-grow: 1;
   margin: 0;
@@ -77,11 +87,11 @@ button{
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .task__input:focus {
   color: #333;
 }
 
-/* New Task */
 #add-task {
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -91,26 +101,28 @@ button{
   display: block;
   margin: 0 0 20px;
 }
+
 #new-task {
   width: 318px;
 }
 
-/* Task list */
 .list__item {
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
 }
+
 .list__item  > * {
   vertical-align: middle;
 }
+
 .task__checkbox {
   margin: 0 10px;
 }
+
 .task__label {
   display: inline-block;
   flex-grow: 1;
@@ -119,26 +131,27 @@ button{
   box-sizing: border-box;
   font-size: 18px;
 }
+
 .task__input {
   display: inline-block;
   width: 226px;
 }
+
 .task__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .task__img:hover {
   transform: rotateZ(0);
 }
 
-/* Completed */
 #completed .task__label {
   text-decoration: line-through;
   color: #888;
 }
 
-/* Edit Task */
 .list__item .task__input {
   display: none;
 }
